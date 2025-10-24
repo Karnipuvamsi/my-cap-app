@@ -12,7 +12,8 @@
     "@sap/cds-dk": "^9"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "test": "echo \"No tests defined\" && exit 0"
   },
   "private": true,
   "cds": {}
