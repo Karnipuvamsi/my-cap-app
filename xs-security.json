@@ -9,7 +9,7 @@
   ],
   "role-templates": [
     {
-      "name": "c",
+      "name": "Admin",
       "description": "Admin role for accessing AdminService",
       "scope-references": [
         "$XSAPPNAME.admin"
