@@ -3,18 +3,26 @@
   "tenant-mode": "dedicated",
   "scopes": [
     {
-      "name": "$XSAPPNAME.Display",
-      "description": "Display access"
+      "name": "$XSAPPNAME.admin",
+      "description": "Admin access to AdminService"
     }
   ],
   "role-templates": [
     {
-      "name": "Viewer",
-      "description": "Read-only access",
+      "name": "c",
+      "description": "Admin role for accessing AdminService",
       "scope-references": [
-        "$XSAPPNAME.Display"
+        "$XSAPPNAME.admin"
+      ]
+    }
+  ],
+  "role-collections": [
+    {
+      "name": "CAPBasicAdmin",
+      "description": "Admin role collection for CAPBASIC app",
+      "role-template-references": [
+        "$XSAPPNAME.Admin"
       ]
     }
   ]
 }
-

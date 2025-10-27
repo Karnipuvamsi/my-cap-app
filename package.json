@@ -19,7 +19,7 @@
   "private": true,
   "cds": {
     "auth": {
-      "kind": "jwt"
+      "kind": "xsuaa"
     }
   }
 }
